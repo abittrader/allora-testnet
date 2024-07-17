@@ -177,7 +177,7 @@ services:
     networks:
       eth-model-local:
         aliases:
-          - worker1
+          - worker2
         ipv4_address: 172.22.0.13
   
 networks:
@@ -193,7 +193,8 @@ volumes:
   head-data:
 ```
 ```console
-docker compose --build up -d
+docker compose up --build -d
+
 ```
 
 ## Check your node status
